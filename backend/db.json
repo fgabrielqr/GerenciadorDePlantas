@@ -1,29 +1,34 @@
 {
-  "products": [
+  "plantas": [
     {
       "id": 1,
       "name": "Graviola",
-      "price": 5.89
+      "alert": "Regar"
     },
     {
       "id": 2,
-      "name": "Notebook Mac Pro",
-      "price": 12000.89
+      "name": "Uva",
+      "alert": "Colher"
     },
     {
       "id": 3,
       "name": "Sansung S20+ Ultra",
-      "price": "7520.89"
+      "alert": "Podar"
     },
     {
       "name": "Lapis Preto Básico",
-      "price": "1.50",
+      "alert": "Regar",
       "id": 4
     },
     {
       "name": "Uva",
-      "price": "1.32",
+      "alert": "Colher",
       "id": 5
+    },
+    {
+      "name": "Cajú",
+      "alert": "Colher",
+      "id": 6
     }
   ]
 }
