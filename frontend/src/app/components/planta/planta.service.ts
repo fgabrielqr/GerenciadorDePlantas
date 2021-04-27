@@ -26,4 +26,8 @@ export class PlantaService {
   create(planta: Planta): Observable<Planta>{
     return this.http.post<Planta>(this.baseUrl, planta)
   }
+
+  read(): Observable<Planta[]> {
+    return this.http.get<Planta[]>(this.baseUrl)
+  }
 }
