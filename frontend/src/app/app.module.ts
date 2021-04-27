@@ -32,6 +32,7 @@ import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from  '@angular/common';
 import { PlantaReadComponent } from './components/planta/planta-read/planta-read.component';
 import { PlantaRead2Component } from './components/planta/planta-read2/planta-read2.component';
+import { PlantaUpdateComponent } from './components/planta/planta-update/planta-update.component';
 
 
 registerLocaleData(localePt);
@@ -47,6 +48,7 @@ registerLocaleData(localePt);
     PlantaCreateComponent,
     PlantaReadComponent,
     PlantaRead2Component,
+    PlantaUpdateComponent,
   ],
   imports: [
     BrowserModule,

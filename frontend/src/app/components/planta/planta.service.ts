@@ -30,4 +30,27 @@ export class PlantaService {
   read(): Observable<Planta[]> {
     return this.http.get<Planta[]>(this.baseUrl)
   }
+
+  readById(id: number): Observable<Planta> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Planta>(url)
+  }
+
+  update(planta: Planta): Observable<Planta> {
+    const url = `${this.baseUrl}/${planta.id}`;
+    return this.http.put<Planta>(url, planta)
+  }
+
+  delete(id: number): Observable<Planta> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Planta>(url).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
+  }
+
+  errorHandler(e: any): Observable<any> {
+    this.showMessage("Ocorreu um erro!", true);
+    return EMPTY;
+  }
 }

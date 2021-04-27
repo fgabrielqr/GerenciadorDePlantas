@@ -1,3 +1,4 @@
+import { PlantaUpdateComponent } from './components/planta/planta-update/planta-update.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: "planta/create",
     component: PlantaCreateComponent
+  },
+  {
+    path: "plantas/update/:id",
+    component: PlantaUpdateComponent
   }
 ];
 
