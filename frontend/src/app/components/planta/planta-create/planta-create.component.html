@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>Cadastrar Planta</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="planta.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Alerta" [(ngModel)]="planta.alert" name="alerta">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createPlanta()" color="primary">
+    Salvar
+</button>
+    <button mat-raised-button (click)="cancel()">
+    Cancelar
+</button>
+</mat-card>
