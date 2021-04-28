@@ -6,12 +6,17 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./views/home/home.component";
 import { PlantaComponent } from "./views/planta/planta.component";
 import { PlantCreateComponent } from './components/plant/plant-create/plant-create.component';
+import { LoginComponent } from './components/plant/login/login.component';
 
 
 const routes: Routes = [
   {
     path: "",
     component: HomeComponent
+  },
+  {
+    path: "plants/login",
+    component: LoginComponent
   },
   {
     path: "plants",

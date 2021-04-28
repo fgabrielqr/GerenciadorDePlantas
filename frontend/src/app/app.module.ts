@@ -35,6 +35,7 @@ import { registerLocaleData } from  '@angular/common';
 import { ForDirective } from './directives/for.directive';
 import { PlantUpdateComponent } from './components/plant/plant-update/plant-update.component';
 import { PlantDeleteComponent } from './components/plant/plant-delete/plant-delete.component';
+import { LoginComponent } from './components/plant/login/login.component';
 
 registerLocaleData(localePt);
 
@@ -53,6 +54,7 @@ registerLocaleData(localePt);
     ForDirective,
     PlantUpdateComponent,
     PlantDeleteComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
