@@ -1,32 +1,38 @@
-import { PlantaUpdateComponent } from './components/planta/planta-update/planta-update.component';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PlantDeleteComponent } from './components/plant/plant-delete/plant-delete.component';
+import { PlantUpdateComponent } from './components/plant/plant-update/plant-update.component';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
 
-import { HomeComponent} from './views/home/home.component';
-import { PlantaComponent} from './views/planta/planta.component';
-import { PlantaCreateComponent } from './components/planta/planta-create/planta-create.component';
+import { HomeComponent } from "./views/home/home.component";
+import { PlantaComponent } from "./views/planta/planta.component";
+import { PlantCreateComponent } from './components/plant/plant-create/plant-create.component';
+
 
 const routes: Routes = [
   {
-  path: "",
-  component: HomeComponent
+    path: "",
+    component: HomeComponent
   },
   {
-  path: "plantas",
-  component: PlantaComponent
+    path: "plants",
+    component: PlantaComponent
   },
   {
-    path: "planta/create",
-    component: PlantaCreateComponent
+    path: "plants/create",
+    component: PlantCreateComponent
   },
   {
-    path: "plantas/update/:id",
-    component: PlantaUpdateComponent
-  }
+    path: "plants/update/:id",
+    component: PlantUpdateComponent
+  },
+  {
+    path: "plants/delete/:id",
+    component: PlantDeleteComponent
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

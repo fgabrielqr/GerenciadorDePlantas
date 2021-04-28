@@ -15,7 +15,7 @@ import { MatCardModule } from  '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { PlantaComponent } from './views/planta/planta.component';
-import { PlantaCreateComponent } from './components/planta/planta-create/planta-create.component';
+import { PlantCreateComponent } from './components/plant/plant-create/plant-create.component';
 import { MatButtonModule } from  '@angular/material/button';
 import { MatSnackBarModule } from  '@angular/material/snack-bar';
 import { HttpClientModule } from  '@angular/common/http';
@@ -23,17 +23,18 @@ import { HttpClientModule } from  '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { PlantReadComponent } from './components/plant/plant-read/plant-read.component';
+import { PlantRead2Component } from './components/plant/plant-read2/plant-read2.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-
+import { RedDirective } from './directives/red.directive';
 
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from  '@angular/common';
-import { PlantaReadComponent } from './components/planta/planta-read/planta-read.component';
-import { PlantaRead2Component } from './components/planta/planta-read2/planta-read2.component';
-import { PlantaUpdateComponent } from './components/planta/planta-update/planta-update.component';
-
+import { ForDirective } from './directives/for.directive';
+import { PlantUpdateComponent } from './components/plant/plant-update/plant-update.component';
+import { PlantDeleteComponent } from './components/plant/plant-delete/plant-delete.component';
 
 registerLocaleData(localePt);
 
@@ -45,10 +46,13 @@ registerLocaleData(localePt);
     NavComponent,
     HomeComponent,
     PlantaComponent,
-    PlantaCreateComponent,
-    PlantaReadComponent,
-    PlantaRead2Component,
-    PlantaUpdateComponent,
+    PlantCreateComponent,
+    PlantReadComponent,
+    PlantRead2Component,
+    RedDirective,
+    ForDirective,
+    PlantUpdateComponent,
+    PlantDeleteComponent,
   ],
   imports: [
     BrowserModule,

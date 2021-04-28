@@ -1,5 +1,6 @@
+import { HeaderService } from '../../components/template/header/header.service';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-planta',
@@ -8,13 +9,19 @@ import { Router } from '@angular/router';
 })
 export class PlantaComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private headerService: HeaderService) {
+    headerService.headerData = {
+      title: 'Cadastro de Plantas',
+      icon: 'storefront',
+      routeUrl: '/plants'
+    }
+  }
 
   ngOnInit(): void {
   }
 
-  navigateToPlantaCreate(): void{
-    this.router.navigate(['/planta/create'])
+  navigateToPlantCreate(): void {
+    this.router.navigate(['/plants/create'])
   }
 
 }

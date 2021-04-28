@@ -1,4 +1,4 @@
-export interface Planta {
+export interface Plant {
     id?: number
     name: string
     alert: string

@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>Excluir Planta</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="plant.name" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Alerta" [value]="plant.alert" name="alert" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deletePlant()" color="warn">
+        Excluir
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

@@ -1,22 +1,12 @@
 {
   "plantas": [
     {
-      "id": 1,
-      "name": "Graviola",
-      "alert": "Regar"
-    },
-    {
       "id": 2,
       "name": "Uva",
-      "alert": "Colher"
+      "alert": "Plantar"
     },
     {
-      "id": 3,
-      "name": "Sansung S20+ Ultra",
-      "alert": "Podar"
-    },
-    {
-      "name": "Lapis Preto Básico",
+      "name": "Goiaba Branca",
       "alert": "Regar",
       "id": 4
     },
@@ -29,6 +19,11 @@
       "name": "Cajú",
       "alert": "Colher",
       "id": 6
+    },
+    {
+      "name": "Cajá Umbú",
+      "alert": "Colhe",
+      "id": 7
     }
   ]
 }
